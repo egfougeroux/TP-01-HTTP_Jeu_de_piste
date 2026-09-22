@@ -1,0 +1,293 @@
+{
+  "info": {
+    "_postman_id": "eb02b4e0-f3b3-4200-9ede-aad018c69484",
+    "name": "TP1-Mission_1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58050900"
+  },
+  "item": [
+    {
+      "name": "Etape 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "172.16.3.254:8001/bienvenue",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "bienvenue"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "172.16.3.254:8001/decouverte-des-parametres?nom=Emma-Gabrielle",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "decouverte-des-parametres"
+          ],
+          "query": [
+            {
+              "key": "nom",
+              "value": "Emma-Gabrielle"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "172.16.3.254:8001/plusieurs-parametres?prenom=Emma-Gabrielle&age=20",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "plusieurs-parametres"
+          ],
+          "query": [
+            {
+              "key": "prenom",
+              "value": "Emma-Gabrielle"
+            },
+            {
+              "key": "age",
+              "value": "20"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "172.16.3.254:8001/un-peu-de-post",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "un-peu-de-post"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 5",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"message\": \"test\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "172.16.3.254:8001/5-content-type",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "5-content-type"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 6",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/html"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<p>Mise à jour</p>",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "172.16.3.254:8001/put-method-6",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "put-method-6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 7",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "172.16.3.254:8001/et-oui-delete?filename=test.txt",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "et-oui-delete"
+          ],
+          "query": [
+            {
+              "key": "filename",
+              "value": "test.txt"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 8",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"role\": \"Developer\",\r\n  \"email\": \"emma@test.fr\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "172.16.3.254:8001/etape8/api/users/12345",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "etape8",
+            "api",
+            "users",
+            "12345"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Etape 9",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "api-key",
+            "value": "FenelonBTSSIO"
+          },
+          {
+            "key": "User-Agent",
+            "value": "FenelonBTSSIO-UserAgent-LaRochelle-v1.0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Donald Duck\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "172.16.3.254:8001/etape9",
+          "host": [
+            "172",
+            "16",
+            "3",
+            "254"
+          ],
+          "port": "8001",
+          "path": [
+            "etape9"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
