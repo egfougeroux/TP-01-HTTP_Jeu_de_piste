@@ -24,12 +24,12 @@ Pour ce TP, j'ai installé et testé deux clients HTTP :
 ### Captures d'écran GET :
 
 #### Postman
-![GET Postman](screenshots/postman_get.png)
-![POST Postman](screenshots/postman_post.png)
+![GET Postman](postman_get.png)
+![POST Postman](postman_post.png)
 
 #### Bruno
-![GET Bruno](screenshots/bruno_get.png)
-![POST Bruno](screenshots/bruno_post.png)
+![GET Bruno](bruno_get.png)
+![POST Bruno](bruno_post.png)
 
 ---
 
